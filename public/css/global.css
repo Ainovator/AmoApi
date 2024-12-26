@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Убираем стандартные отступы браузера */
+    padding: 0 100px; /* Отступы слева и справа */
+    box-sizing: border-box; /* Учитываем padding в расчёт ширины */
+    background-color: #F5F5F5;
+}
+
+
+h1, h2, h3 {
+    color: #A9DFBF;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+
+header {
+    background-color: #333333; /* Белый фон */
+
+    box-shadow: 0 2px 5px #A9DFBF; /* Лёгкая тень */
+    border-radius: 12px; /* Закруглённые углы */
+    margin: 20px 0; /* Отступ сверху и снизу */
+    padding: 15px 0; /* Убираем лишний padding */
+}
+
+/* Контейнер для содержимого */
+header .container {
+    width: 100%; /* Занимает всю ширину шапки */
+    padding: 0 30px; /* Адаптивные отступы слева и справа */
+    box-sizing: border-box; /* Учитываем padding в расчёте ширины */
+    display: flex;
+    justify-content: space-between; /* Разделяем содержимое */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+/* Логотип */
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #A9DFBF; /* Акцентный синий */
+}
+
+/* Навигация */
+header nav ul.main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Элементы меню */
+header nav ul.main-menu li {
+    margin-right: 20px;
+}
+
+header nav ul.main-menu li:last-child {
+    margin-right: 0; /* Убираем отступ у последнего элемента */
+}
+
+/* Ссылки в меню */
+header nav ul.main-menu li a {
+    color: #A9DFBF; /* Акцентный синий */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul.main-menu li a:hover {
+    color: #0056b3; /* Более насыщенный синий при наведении */
+}
